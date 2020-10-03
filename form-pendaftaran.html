@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Tugas Membuat Antarmuka Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS Datepicker -->
+    <link rel="stylesheet" href="datepicker/dist/css/bootstrap-datepicker.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="logo navbar-brand" href="index.html">Tugas DTS 03</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pelatihan
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Vocational School Graduate Academy
+                                    (VSGA)</a>
+                                <a class="dropdown-item" href="#">Fresh Graduate Academy
+                                    (FGA)</a>
+                                <a class="dropdown-item" href="#">Online Academy
+                                    (OA)</a>
+                                <a class="dropdown-item" href="#">Thematic Academy
+                                    (TA)</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="form-pendaftaran.html">Pendaftaran</a>
+                        </li>
+                    </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section class="header-content mt-5">
+        <div class="container">
+            <div class="content">
+                <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="/images/logo.png" alt="Logo DTS" height="72">
+                    <h2>Form Pendaftaran</h2>
+                    <p class="lead"></p>
+                </div>
+    </section>
+
+    <div class="container">
+        <div class="card card-regis">
+            <div class="card-body">
+                <div class="row">
+                    <div class=" col-md-12">
+                        <h4 class="mb-3">Registrasi</h4>
+                        <form class="needs-validation">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">Nama Depan</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                        required="">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName">Nama Belakang</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                        required="">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email">Email <span class="text-muted"></span></label>
+                                <input type="email" class="form-control" id="email" placeholder="budi@contoh.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email">No. HP</label>
+                                <input type="email" class="form-control" id="email" placeholder="+62123456789">
+                            </div>
+
+                            <div class="mb-3"> <label for="address">Alamat</label>
+                                <input type="text" class="form-control" id="address" required="">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="country">Jenis Kelamin</label>
+                                    <select class="custom-select d-block w-100" id="country" required="">
+                                        <option value="">Pilih</option>
+                                        <option>Laki-laki</option>
+                                        <option>Perempuan</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label fortate">Pendidikan Terakhir</label>
+                                    <select class="custom-select d-block w-100" id="state" required="">
+                                        <option value="">Pilih</option>
+                                        <option>SMA</option>
+                                        <option>DIploma</option>
+                                        <option>Sarjana</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label fortate">Tanggal Lahir</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text calender-fill" id="basic-addon1">
+                                                <svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                    class="bi bi-calendar-event" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                    <path
+                                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <input type="text" class="form-control" id="datepicker"
+                                            placeholder="dd-mm-yyyy">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="mb-4">
+
+                            <h4 class="mb-3">Pilih Pelatihan</h4>
+
+                            <div class="d-block my-3">
+                                <div class="custom-control custom-radio">
+                                    <input id="fga" name="pilihKelas" type="radio" class="custom-control-input"
+                                        checked="" required="">
+                                    <label class="custom-control-label" for="fga">Fresh Graduate Academy
+                                        (FGA)</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="vsga" name="pilihKelas" type="radio" class="custom-control-input"
+                                        required="">
+                                    <label class="custom-control-label" for="vsga">Vocational School Graduate Academy
+                                        (VSGA)</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="oa" name="pilihKelas" type="radio" class="custom-control-input"
+                                        required="">
+                                    <label class="custom-control-label" for="oa">Online Academy
+                                        (OA)</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input id="ta" name="pilihKelas" type="radio" class="custom-control-input"
+                                        required="">
+                                    <label class="custom-control-label" for="ta">Thematic Academy
+                                        (TA)</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Apakah anda penyandang
+                                    disabilitas.</label>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Daftar Sekarang</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <footer class="text-foot mt-5 py-3 text-center text-small bg-dark">
+        <p class="mb-1">© Rahmad Bintang Aji Indra Yaksa - Tugas 03 Membuat Antarmuka Website 2020</p>
+        <ul class="list-inline pt-2">
+            <li class="list-inline-item">
+                <a href="https://github.com/bintangajir/" class="fa fa-lg fa-github"></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/ajii023_/" class="fa fa-lg fa-instagram"></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/rahmad-bintang-aji-indra-yaksa-bb27481b3/"
+                    class="fa fa-lg fa-linkedin"></a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- Datepicker JS -->
+    <script src="datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#datepicker").datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true,
+                todayHighlight: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
